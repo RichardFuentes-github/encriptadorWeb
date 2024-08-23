@@ -1,0 +1,230 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+* {
+padding: 0;
+margin: 0;
+}
+
+body{
+    background-color: #f3f5fc;
+    font-family: "Inter",sans-serif;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+header{
+    width: 60%;
+    height: 48px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.form_secction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+
+.cajatexto{
+    width: 100%;
+    max-width: 577px;
+    height: 64dvh;
+    border-color: transparent;
+    outline:none;
+    background-color: transparent;
+    color: #0A3871;
+    font-family: "Inter",sans-serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+    overflow: auto;
+    resize: none;
+}
+::placeholder{
+    color: #0A3871;
+    font-family: "Inter",sans-serif;
+    font-size: 32px;
+}
+.alert_msj{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.btn-encriptar{
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    border: 1px solid #0A3871;
+}
+.btn-encriptar:hover{
+    background-color: #3f88e0;
+}
+.btn-encriptar:active{
+    background: #0A3871
+}
+
+.btn-desencriptar{
+    background: transparent;
+    color: #0A3871;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    border: 1px solid #0A3871;
+}
+.btn-desencriptar:hover{
+    background: #e0e5f7;
+}
+.btn-desencriptar:active{
+    background: transparent
+}
+.result{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 72dvh;
+    border-radius: 32px;
+    max-width:400px;
+    width: 100%;
+}
+.result_img{
+    display: block;
+}
+.result_container{
+    width: 270px;
+    align-items: center;
+}
+.result_titulo{
+    text-align: center;
+}
+.result_text{
+    text-align: center;
+}
+.btnCopiar{
+    background:transparent;
+    color: #0A3871;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    display: none;
+}
+.btnCopiar:hover{
+    background: #f3f5fc;
+}
+.btnCopiar:active{
+    background: transparent;
+}
+.submit_container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.Resultado{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    height: 50dvh;
+    font-family: "Inter", sans-serif;
+    display: none;
+    overflow: auto;
+    font-size: large;
+    color: rgb(85, 85, 85);
+    word-wrap: break-word;
+}
+
+.Resultado.p{
+    font-family: "Inter", sans-serif;
+    max-width: 350px;
+    width: 100%;
+    inline-size: 350px;
+}
+@media screen and (max-width:768px){ 
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        margin-top: 10px;
+        width: 73px;
+    }
+    .result_img{
+        display: none;
+    }
+    .result{
+        height: auto;
+        max-width: 624px;
+        margin-top: 20px;
+        min-height: 186px;
+    }
+    .Resultado{
+        height: auto;
+        max-width: 550px;
+        margin-top: 20px;
+        min-height: 150px;
+    }
+    .Resultado.p{
+        height: auto;
+        max-width: 550px;
+        margin-top: 20px;
+        min-height: 150px;
+    }
+    .submit_container{
+        gap: 20px;
+        justify-content: center;
+    }
+    .result_container{
+        align-items: center;
+    }
+    .result_titulo{
+        text-align: center;
+    }
+    .result_text{
+        text-align: center;
+    }
+    .btnCopiar{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:375px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        width: 340px;
+    }
+    .btn_conteiner{
+        width: 340px;
+        align-self: center;
+    }
+    .Resultado{
+        height: auto;
+        max-width: 300px;
+        margin-top: 10px;
+        min-height: 150px;
+    }
+    .Resultado.p{
+        height: auto;
+        max-width: 300px;
+        margin-top: 10px;
+        min-height: 150px;
+    }
+    .btnCopiar{
+        margin-bottom: 10px;
+    }
+}
